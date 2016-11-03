@@ -1,9 +1,9 @@
 [user]
-  name = Brandon Weiss
-  email = brandon@anti-pattern.com
+  name = Avand Amiri
+  email = avand@avandamiri.com
 
 [github]
-  user  = brandonweiss
+  user = avand
 
 [core]
   excludesfile = ~/.gitignore
@@ -14,23 +14,7 @@
 [diff]
   # For Github-style word diffs
   wordRegex = [^[:space:]]
-  tool = Kaleidoscope
   compaction-heuristic = true
-
-[difftool]
-  prompt = false
-
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-
-[merge]
-  tool = Kaleidoscope
-
-[mergetool]
-  prompt = false
-
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
 
 [color]
   ui          = auto
@@ -54,14 +38,7 @@
 [rebase]
   autosquash = true
 
-[remote "origin"]
-  # fetch = +refs/pull/*/head:refs/remotes/origin/pull/*
-
 [alias]
-  # ra = recent commits, all reachable refs
-  # r  = recent commits, only current branch
-  # la = all commits, all reachable refs
-  # l  = all commits, only current branch
   s   = status -sb
   f   = fetch
   ra  = !git r --all
