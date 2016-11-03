@@ -1,11 +1,8 @@
 "*":
-  "atom-beautify":
-    _analyticsUserId: "0ed61702-263b-4138-961b-6190a4b74f9f"
   "autocomplete-plus": {}
   core:
     disabledPackages: [
       "language-php"
-      "language-java"
       "language-c"
       "language-objective-c"
       "language-perl"
@@ -18,9 +15,6 @@
       "atom-html-preview"
       "emmet"
     ]
-    ignoredNames: [
-      "public/ember-dev"
-    ]
   editor:
     autoIndentOnPaste: false
     fontFamily: "SFMono-Regular"
@@ -29,17 +23,8 @@
     lineHeight: 1.55
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
-  "exception-reporting":
-    userId: "d860e2ce-b841-f643-3414-b61df9ea2275"
-  "find-and-replace": {}
   "fuzzy-finder":
     preserveLastSearch: true
-  "linter-jshint":
-    disableWhenNoJshintrcFileInPath: true
-  metrics:
-    userId: "78d13bac588a8fc8b6c7e7e5427cd45c06007882"
-  minimap: {}
-  react: {}
   runner:
     scopes:
       ruby: "/usr/local/bin/rbenv exec ruby"
