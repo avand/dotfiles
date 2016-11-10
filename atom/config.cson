@@ -19,7 +19,6 @@
     ]
   editor:
     autoIndentOnPaste: false
-    fontFamily: "SFMono-Regular"
     fontSize: 15
     invisibles: {}
     lineHeight: 1.55
