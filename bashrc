@@ -4,9 +4,6 @@ PATH="$HOME/Code/dotfiles/bin:$PATH"
 
 eval "$(rbenv init -)"
 
-NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
-
 EDITOR="atom --wait"
 GIT_EDITOR="atom --wait"
 
