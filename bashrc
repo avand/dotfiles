@@ -1,7 +1,3 @@
-function rm() {
-  rm-ruby $@
-}
-
 PATH="./node_modules/.bin:$PATH"
 PATH="./bin:$PATH"
 PATH="$HOME/Code/dotfiles/bin:$PATH"
