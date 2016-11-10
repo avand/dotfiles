@@ -1,5 +1,7 @@
 "*":
   "autocomplete-plus": {}
+  autosave:
+    enabled: true
   core:
     disabledPackages: [
       "language-php"
