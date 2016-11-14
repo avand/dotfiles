@@ -40,6 +40,7 @@
 
 [alias]
   s   = status -sb
+  st  = status
   f   = fetch
   ra  = !git r --all
   r   = !GIT_NO_PAGER=1 git l -30
@@ -53,6 +54,7 @@
   b   = branch
   c   = commit -m
   ca  = commit -a -m
+  ci  = commit
   cp  = commit -am 'cp'
   amen = amend --no-edit
   w   = whatchanged
