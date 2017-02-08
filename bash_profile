@@ -66,17 +66,7 @@ function _print_in_color() {
   echo -en $RESTORE
 }
 
-function _prompt_color_for_status() {
-  if [ $1 -eq 0 ]; then
-    echo $MAGENTA
-  else
-    echo $RED
-  fi
-}
-
 function prompt() {
-  local last_status=$?
-
   printf "\n"
   _print_in_color $(_pwd_with_tilde) $BLUE
 
@@ -88,8 +78,11 @@ function prompt() {
   fi
 
   printf "\n"
-  _print_in_color "❯ " $(_prompt_color_for_status $last_status)
-  printf " "
+  if [ $? -eq 0 ]; then
+    PS1="\["$MAGENTA$"\]❯\["$RESTORE$"\] "
+  else
+    PS1="\["$RED$"\]❯\["$RESTORE$"\] "
+  fi
 }
 
-export PS1="\$(prompt)"
+PROMPT_COMMAND=prompt
