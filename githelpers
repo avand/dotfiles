@@ -59,3 +59,7 @@ pretty_git_log() {
             less --quit-if-one-screen --no-init --raw-control-chars --chop-long-lines
         fi
 }
+
+commits_between_branches() {
+  git log --graph --abbrev-commit --date=relative --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' master..HEAD
+}

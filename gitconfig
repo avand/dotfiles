@@ -46,6 +46,7 @@
   r   = !GIT_NO_PAGER=1 git l -30
   la  = !git l --all
   l   = "!. ~/.githelpers && pretty_git_log"
+  logx = "!. ~/.githelpers && commits_between_branches"
   d   = diff
   dc  = diff --cached
   co  = checkout
