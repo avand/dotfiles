@@ -13,6 +13,7 @@ task :install do
   ln_s "#{Dir.pwd}/atom/keymap.cson", "#{home}/.atom/keymap.cson", force: true
   ln_s "#{Dir.pwd}/atom/styles.less", "#{home}/.atom/styles.less", force: true
 
+  system "brew install emojify"
   system "npm install -g diff-so-fancy"
   system "source ./extras/osx_settings"
 end
