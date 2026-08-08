@@ -18,6 +18,12 @@ link() {
 link zshrc                "$HOME/.zshrc"
 link claude-statusline.sh "$HOME/.claude/statusline.sh"
 link claude-settings.json "$HOME/.claude/settings.json"
+link ghostty-config       "$HOME/Library/Application Support/com.mitchellh.ghostty/config.ghostty"
+
+# The Ghostty config asks for JetBrains Mono Medium, which the app doesn't bundle.
+if ! ls "$HOME/Library/Fonts" /Library/Fonts 2>/dev/null | grep -qi jetbrainsmono; then
+  echo "JetBrains Mono not installed — run: brew install --cask font-jetbrains-mono"
+fi
 
 if [[ ! -f "$HOME/.zshrc.local" ]]; then
   cat > "$HOME/.zshrc.local" <<'TEMPLATE'
