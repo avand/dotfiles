@@ -127,7 +127,6 @@ if [[ ! -f "$HOME/.zshrc.local" ]]; then
   cat > "$HOME/.zshrc.local" <<'TEMPLATE'
 # Secrets and per-machine settings. Not committed — fill these in.
 # export PORTAL_API_TOKEN=
-# export CLOUDFLARE_TUNNEL_NAME=
 TEMPLATE
   chmod 600 "$HOME/.zshrc.local"
   echo "created ~/.zshrc.local template — fill in your secrets"
