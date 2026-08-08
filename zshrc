@@ -12,7 +12,10 @@ precmd() {
   vcs_info
 }
 
-PROMPT='%1~${vcs_info_msg_0_} → '
+# Folder and branch muted so the orange arrow carries the eye to what you type.
+# 245 and 208 are 256-colour codes rather than hex, so they stay put when
+# Ghostty flips between its light and dark themes.
+PROMPT='%F{245}%1~${vcs_info_msg_0_}%f %F{208}%B→%b%f '
 
 export PATH=/opt/homebrew/share/google-cloud-sdk/bin:"$PATH"
 export PATH="$HOME/.local/bin:$PATH"
