@@ -88,6 +88,10 @@ fi
 link zshrc                "$HOME/.zshrc"
 link claude-statusline.sh "$HOME/.claude/statusline.sh"
 link claude-settings.json "$HOME/.claude/settings.json"
+# claudep (personal account) uses an isolated CLAUDE_CONFIG_DIR — see zshrc —
+# so it needs its own copies of the same links.
+link claude-statusline.sh "$HOME/.claude-personal/statusline.sh"
+link claude-settings.json "$HOME/.claude-personal/settings.json"
 link ghostty-config       "$HOME/Library/Application Support/com.mitchellh.ghostty/config.ghostty"
 link vscode-settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 link mise-config.toml     "$HOME/.config/mise/config.toml"
@@ -116,6 +120,8 @@ if [[ -n "$code_cli" ]]; then
 else
   echo "skipped VS Code extensions — no code CLI found"
 fi
+
+"$repo/macos-defaults.sh"
 
 if [[ ! -f "$HOME/.zshrc.local" ]]; then
   cat > "$HOME/.zshrc.local" <<'TEMPLATE'
