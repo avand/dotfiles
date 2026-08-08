@@ -1,0 +1,9 @@
+name = "bootstrap"
+main = "worker.js"
+compatibility_date = "2026-08-01"
+
+# custom_domain = true has Cloudflare create and manage the DNS record for
+# bootstrap.avand.dev, so there's nothing to add in the dashboard by hand.
+[[routes]]
+pattern = "bootstrap.avand.dev"
+custom_domain = true
