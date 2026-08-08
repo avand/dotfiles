@@ -73,6 +73,16 @@ else
   install_pkg formula mise
 fi
 
+# Claude Code has its own installer rather than a brew package — it installs
+# into ~/.local, which zshrc already puts on PATH. Without it the claudew and
+# claudep aliases point at a command that doesn't exist.
+if command -v claude >/dev/null 2>&1 || [[ -x "$HOME/.local/bin/claude" ]]; then
+  echo "claude already installed"
+else
+  echo "installing claude..."
+  curl -fsSL https://claude.ai/install.sh | bash || echo "WARNING: claude failed to install"
+fi
+
 # --- config -----------------------------------------------------------------
 
 link zshrc                "$HOME/.zshrc"
@@ -122,5 +132,6 @@ cat <<'DONE'
 Done. Left to do by hand — these need credentials, so they can't be scripted:
   1. gh auth login
   2. Sign in to 1Password
-  3. Fill in ~/.zshrc.local
+  3. Run `claude` once and log in (repeat with claudep for the personal account)
+  4. Fill in ~/.zshrc.local
 DONE

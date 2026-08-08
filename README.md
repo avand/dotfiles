@@ -36,6 +36,11 @@ you put there by hand still counts as installed.
 | `font-jetbrains-mono` | cask    | JetBrains Mono Medium is installed        |
 | `gh`                  | formula | `gh` is on PATH                           |
 | `mise`                | formula | `mise` is on PATH or in `~/.local/bin`    |
+| Claude Code           | own installer | `claude` is on PATH or in `~/.local/bin` |
+
+Claude Code isn't a Homebrew package — it ships its own installer, which puts
+it in `~/.local`. `zshrc` already has that on PATH, which is what makes the
+`claudew` and `claudep` aliases work.
 
 VS Code extensions listed in `vscode-extensions.txt` are installed too. To add
 one, install it normally and then:
@@ -66,7 +71,8 @@ this list when it finishes:
 
 1. `gh auth login`
 2. Sign in to 1Password
-3. Fill in `~/.zshrc.local`
+3. Run `claude` once and log in — then `claudep` for the personal account
+4. Fill in `~/.zshrc.local`
 
 ## Ghostty
 
