@@ -1,2 +1,7 @@
 .zshrc.local
 *.backup
+
+# gh stores its oauth token in hosts.yml — this repo is public.
+# Only config.yml (aliases, preferences) belongs here.
+gh-hosts.yml
+hosts.yml
