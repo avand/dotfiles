@@ -1,0 +1,15 @@
+font-family = "JetBrains Mono"
+font-style = "Medium"
+font-size = 15.5
+
+adjust-cell-height = 12%
+
+window-padding-x = 24
+window-padding-y = 24
+
+theme = "light:GitHub Light Default,dark:GitHub Dark Default"
+
+cursor-style = block_hollow
+shell-integration-features = no-cursor
+
+scrollback-limit = 10000000
