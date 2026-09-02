@@ -5,3 +5,6 @@
 # Only config.yml (aliases, preferences) belongs here.
 gh-hosts.yml
 hosts.yml
+
+# wrangler's local scratch space — caches the Cloudflare account ID.
+bootstrap-worker/.wrangler/
