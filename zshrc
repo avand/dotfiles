@@ -22,8 +22,8 @@ export PATH="$HOME/.local/bin:$PATH"
 eval "$(mise activate zsh)"
 
 # Claude Code account separation (work = existing ~/.claude, personal = isolated)
-alias claudew="CLAUDE_CONFIG_DIR=$HOME/.claude claude --permission-mode auto"
-alias claudep="CLAUDE_CONFIG_DIR=$HOME/.claude-personal claude --permission-mode auto"
+alias claudew="CLAUDE_CONFIG_DIR=$HOME/.claude claude --dangerously-skip-permissions"
+alias claudep="CLAUDE_CONFIG_DIR=$HOME/.claude-personal claude --dangerously-skip-permissions"
 
 # Secrets and per-machine settings — never committed. See README.
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
