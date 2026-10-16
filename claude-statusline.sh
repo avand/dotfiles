@@ -58,8 +58,8 @@ DEV_GLYPH="●"                      # shown when this tenant is running bin/dev
 DEV_COLOR="${ESC}[38;5;46m"        # bright green
 NAME_CAP=""                        # trailing cap on the name frame ("" to disable)
 
-# --- directory: collapse ~/Code/the-intern/tenant-* to tenant-*, else ~-abbreviate ---
-the_intern="$HOME/Code/the-intern"
+# --- directory: collapse ~/Code/flying-car/tenant-* to tenant-*, else ~-abbreviate ---
+the_intern="$HOME/Code/flying-car"
 chip_bg=$DEFAULT_BG
 chip_light=$DEFAULT_LIGHT
 tenant_num=""
