@@ -14,6 +14,9 @@
     "enabled": true,
     "mode": "hold"
   },
+  "permissions": {
+    "defaultMode": "bypassPermissions"
+  },
   "skipDangerousModePermissionPrompt": true,
   "skipWorkflowUsageWarning": true,
   "theme": "auto",
