@@ -1,5 +1,6 @@
 {
   "model": "opus[1m]",
+  "cleanupPeriodDays": 365,
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh",
